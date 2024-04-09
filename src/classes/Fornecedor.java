@@ -24,8 +24,8 @@ public class Fornecedor extends Pessoa{
     @Override
     public String toString(){
         return
-                "Fornecedor" + this.idFornecedor + "\n"
-                + "Categoria Fornecida: " + this.categoriaFornecida.getTipoCategoria()
+                "Fornecedor id: " + this.idFornecedor + "\n"
+                + "Categoria Fornecida: " + this.categoriaFornecida.getTipoCategoria() + "\n"
                 + super.toString();
     }
 }

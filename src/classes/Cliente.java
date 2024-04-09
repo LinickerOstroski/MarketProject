@@ -16,7 +16,7 @@ public class Cliente extends Pessoa {
     @Override 
     public String toString(){
         return 
-                "Cliente: " + this.idCliente + "\n" 
+                "Cliente id: " + this.idCliente + "\n" 
                 + super.toString();
     }
 }

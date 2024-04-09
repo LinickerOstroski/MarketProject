@@ -33,5 +33,13 @@ public class Funcionarios extends Pessoa implements Financeiro{
         this.salario += quantidade;
     }
     
-
+     @Override
+    public String toString(){
+        return
+                "Funcionario id: " + this.idFuncionarios + "\n"
+                + "Salário:" + getSalario() + "\n"
+                + "Função:" + getFuncao() + "\n"
+                + super.toString();
+    
+    }
 }
