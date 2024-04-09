@@ -12,14 +12,11 @@ public class Cliente extends Pessoa {
         this.idCliente = this.identificadorEstatico;
         this.identificadorEstatico++;
     }
-
-    @Override
-    public void andar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public void falar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    
+    @Override 
+    public String toString(){
+        return 
+                "Cliente: " + this.idCliente + "\n" 
+                + super.toString();
     }
 }

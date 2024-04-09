@@ -1,6 +1,5 @@
 package classes;
 
-
 public class Estoques {
     private Produto produto;
     private int quantidade;

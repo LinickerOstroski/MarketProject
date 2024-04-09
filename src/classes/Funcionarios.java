@@ -1,6 +1,6 @@
 package classes;
 
-public class Funcionarios extends Pessoa {
+public class Funcionarios extends Pessoa implements Financeiro{
 
     private static int identificadorEstatico;
     private int idFuncionarios;
@@ -28,18 +28,10 @@ public class Funcionarios extends Pessoa {
         return salario;
     }
 
-    public void setSalario(double salario) {
-        this.salario = salario;
-    }
-
     @Override
-    public void andar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void receberSalario(double quantidade) {
+        this.salario += quantidade;
     }
-
-    @Override
-    public void falar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+    
 
 }

@@ -1,6 +1,6 @@
 package classes;
 
-abstract class Pessoa implements PessoaAcoes{
+abstract class Pessoa{
 
     private String nome;
     private int idade;
@@ -67,4 +67,14 @@ abstract class Pessoa implements PessoaAcoes{
         this.telefone = telefone;
     }
 
+    @Override
+    public String toString(){
+        return
+                "Nome: " + this.nome + "\n"
+                + "Idade: " + this.idade + "\n"
+                + "CPF: " + this.cpf + "\n"
+                + "Endereço: " + this.endereco + "\n"
+                + "Sexo: " + this.sexo + "\n"
+                + "Telefone: " + this.telefone + "\n ----- \n"; 
+    }
 }
